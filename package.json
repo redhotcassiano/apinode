@@ -1,0 +1,19 @@
+{
+  "name": "apinode",
+  "version": "1.0.0",
+  "description": "API em NODEJS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redhotcassiano/apinode.git"
+  },
+  "author": "Cassiano de Souza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/redhotcassiano/apinode/issues"
+  },
+  "homepage": "https://github.com/redhotcassiano/apinode#readme"
+}
