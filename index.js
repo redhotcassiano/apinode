@@ -13,7 +13,7 @@ app.use(bodyParser.json())
 
 app.use(cors())
 
-let mongoose = mongoose.connect('mongodb://localhost:27017/loja_api', { useMongoClient: true })
+let db = mongoose.connect('mongodb://localhost:27017/loja_api', { useMongoClient: true })
 
 routes(app)
 
