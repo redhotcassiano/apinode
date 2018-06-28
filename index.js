@@ -4,6 +4,7 @@ import morgan from 'morgan'
 import mongoose from 'mongoose'
 import cors from 'cors'
 import routes from './routes'
+import jobs from './jobs'
 
 const app = express()
 
@@ -16,8 +17,8 @@ app.use(cors())
 let db = mongoose.connect('mongodb://localhost:27017/loja_api', { useMongoClient: true })
 
 routes(app)
+jobs()
 
 app.listen(3000, () => {
     console.log('Express server has been started')
 })
-
