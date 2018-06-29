@@ -20,7 +20,7 @@ app.use(cors())
 let db = mongoose.connect('mongodb://localhost:27017/loja_api', { useMongoClient: true })
 
 routes(app)
-jobs()
+//jobs()
 
 // record a generic message and send it to Rollbar
 rollbar.log("Hello world!");

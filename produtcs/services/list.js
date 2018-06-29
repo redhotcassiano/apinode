@@ -1,6 +1,7 @@
 import Product from './../schema/Product'
 
 export default (req, res) => {
+    console.log('Acertou aqui')
     Product.find({})
         .then((products)=>{
             if(!products || !products.length){
