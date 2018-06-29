@@ -6,5 +6,5 @@ import products from './produtcs/'
 export default(app) => {
     app.use('/', hello)
     app.use('/bills', bills)
-    app.use('/produtcs', products)
+    app.use('/products', products)
 }

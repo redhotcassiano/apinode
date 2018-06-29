@@ -1,4 +1,7 @@
+import emails from './../emails/'
+
 const Agenda = require('agenda')
+
 
 const agenda = new Agenda({db:{address: 'localhost:27017/loja_api', collection: 'jobs'}})
 
@@ -6,7 +9,8 @@ const agenda = new Agenda({db:{address: 'localhost:27017/loja_api', collection: 
 export default () => {
 
     agenda.define('test', (job, done) => {
-        console.log('Hello')        
+        console.log('Hello')
+        emails('test@email.com', 'test@email.com', 'Testando 2...', 'Teste 123')        
         done()
     });
 
